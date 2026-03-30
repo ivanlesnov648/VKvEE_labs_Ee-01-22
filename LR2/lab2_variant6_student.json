@@ -1,0 +1,306 @@
+{
+    "protection": {
+        "line_protection": [
+            {
+                "name": "LZ_W1E_main_1",
+                "name_protected_equipment": "W1E",
+                "setting": 2200,
+                "type": "main",
+                "voltage": "500kV",
+                "failure_probability": 0.2
+            },
+            {
+                "name": "LZ_W1E_main_2",
+                "name_protected_equipment": "W1E",
+                "setting": 2300,
+                "type": "main",
+                "voltage": "500kV",
+                "failure_probability": 0.2
+            },
+            {
+                "name": "LZ_W1E_res_1",
+                "name_protected_equipment": "W1E",
+                "setting": 1800,
+                "type": "reserve",
+                "voltage": "500kV",
+                "failure_probability": 0.2
+            },
+            {
+                "name": "LZ_W1E_res_2",
+                "name_protected_equipment": "W1E",
+                "setting": 1700,
+                "type": "reserve",
+                "voltage": "500kV",
+                "failure_probability": 0.2
+            },
+            {
+                "name": "LZ_W2E_main_1",
+                "name_protected_equipment": "W2E",
+                "setting": 2200,
+                "type": "main",
+                "voltage": "500kV",
+                "failure_probability": 0.2
+            },
+            {
+                "name": "LZ_W2E_main_2",
+                "name_protected_equipment": "W2E",
+                "setting": 2300,
+                "type": "main",
+                "voltage": "500kV",
+                "failure_probability": 0.2
+            },
+            {
+                "name": "LZ_W2E_res_1",
+                "name_protected_equipment": "W2E",
+                "setting": 1800,
+                "type": "reserve",
+                "voltage": "500kV",
+                "failure_probability": 0.2
+            },
+            {
+                "name": "LZ_W2E_res_2",
+                "name_protected_equipment": "W2E",
+                "setting": 1700,
+                "type": "reserve",
+                "voltage": "500kV",
+                "failure_probability": 0.2
+            },
+            {
+                "name": "LZ_W3E_main",
+                "name_protected_equipment": "W3E",
+                "setting": 1200,
+                "type": "main",
+                "voltage": "220kV",
+                "failure_probability": 0.15
+            },
+            {
+                "name": "LZ_W3E_res",
+                "name_protected_equipment": "W3E",
+                "setting": 900,
+                "type": "reserve",
+                "voltage": "220kV",
+                "failure_probability": 0.15
+            }
+        ],
+        "transformer_protection": [
+            {
+                "name": "TZ_T1_main_1",
+                "name_protected_equipment": "T1",
+                "setting": 2000,
+                "type": "main",
+                "voltage": "500kV",
+                "failure_probability": 0.1
+            },
+            {
+                "name": "TZ_T1_main_2",
+                "name_protected_equipment": "T1",
+                "setting": 2100,
+                "type": "main",
+                "voltage": "500kV",
+                "failure_probability": 0.1
+            },
+            {
+                "name": "TZ_T1_res_1",
+                "name_protected_equipment": "T1",
+                "setting": 1600,
+                "type": "reserve",
+                "voltage": "500kV",
+                "failure_probability": 0.1
+            },
+            {
+                "name": "TZ_T1_res_2",
+                "name_protected_equipment": "T1",
+                "setting": 1500,
+                "type": "reserve",
+                "voltage": "500kV",
+                "failure_probability": 0.1
+            }
+        ],
+        "bus_protection": [
+            {
+                "name": "BZ_B1_main_1",
+                "name_protected_equipment": "B1",
+                "setting": 2400,
+                "type": "main",
+                "voltage": "500kV",
+                "failure_probability": 0.1
+            },
+            {
+                "name": "BZ_B1_main_2",
+                "name_protected_equipment": "B1",
+                "setting": 2500,
+                "type": "main",
+                "voltage": "500kV",
+                "failure_probability": 0.1
+            },
+            {
+                "name": "BZ_B1_res_1",
+                "name_protected_equipment": "B1",
+                "setting": 2000,
+                "type": "reserve",
+                "voltage": "500kV",
+                "failure_probability": 0.1
+            },
+            {
+                "name": "BZ_B1_res_2",
+                "name_protected_equipment": "B1",
+                "setting": 1900,
+                "type": "reserve",
+                "voltage": "500kV",
+                "failure_probability": 0.1
+            },
+            {
+                "name": "BZ_B2_main",
+                "name_protected_equipment": "B2",
+                "setting": 1300,
+                "type": "main",
+                "voltage": "220kV",
+                "failure_probability": 0.1
+            },
+            {
+                "name": "BZ_B2_res",
+                "name_protected_equipment": "B2",
+                "setting": 1000,
+                "type": "reserve",
+                "voltage": "220kV",
+                "failure_probability": 0.1
+            }
+        ]
+    },
+    "substation": {
+        "line": [
+            {
+                "name": "W1E",
+                "voltage": "500kV",
+                "connected_with": [
+                    "B1"
+                ],
+                "switched_by": [
+                    "Q1",
+                    "QS1"
+                ]
+            },
+            {
+                "name": "W2E",
+                "voltage": "500kV",
+                "connected_with": [
+                    "B1"
+                ],
+                "switched_by": [
+                    "Q2",
+                    "QS1"
+                ]
+            },
+            {
+                "name": "W3E",
+                "voltage": "220kV",
+                "connected_with": [
+                    "B2"
+                ],
+                "switched_by": [
+                    "Q3",
+                    "QS2"
+                ]
+            }
+        ],
+        "transformer": [
+            {
+                "name": "T1",
+                "voltage": "500/220kV",
+                "connected_with": [
+                    "B1",
+                    "B2"
+                ],
+                "switched_by": [
+                    "QT1_HV",
+                    "QT1_LV"
+                ]
+            }
+        ],
+        "bus": [
+            {
+                "name": "B1",
+                "voltage": "500kV",
+                "connected_with": [
+                    "W1E",
+                    "W2E",
+                    "T1"
+                ],
+                "switched_by": [
+                    "QS1",
+                    "QT1_HV"
+                ]
+            },
+            {
+                "name": "B2",
+                "voltage": "220kV",
+                "connected_with": [
+                    "W3E",
+                    "T1"
+                ],
+                "switched_by": [
+                    "QS2",
+                    "QT1_LV"
+                ]
+            }
+        ],
+        "breaker": [
+            {
+                "name": "Q1",
+                "voltage": "500kV",
+                "connected_with": [
+                    "W1E"
+                ],
+                "switched_by": []
+            },
+            {
+                "name": "Q2",
+                "voltage": "500kV",
+                "connected_with": [
+                    "W2E"
+                ],
+                "switched_by": []
+            },
+            {
+                "name": "Q3",
+                "voltage": "220kV",
+                "connected_with": [
+                    "W3E"
+                ],
+                "switched_by": []
+            },
+            {
+                "name": "QS1",
+                "voltage": "500kV",
+                "connected_with": [
+                    "B1"
+                ],
+                "switched_by": []
+            },
+            {
+                "name": "QS2",
+                "voltage": "220kV",
+                "connected_with": [
+                    "B2"
+                ],
+                "switched_by": []
+            },
+            {
+                "name": "QT1_HV",
+                "voltage": "500kV",
+                "connected_with": [
+                    "T1"
+                ],
+                "switched_by": []
+            },
+            {
+                "name": "QT1_LV",
+                "voltage": "220kV",
+                "connected_with": [
+                    "T1"
+                ],
+                "switched_by": []
+            }
+        ]
+    }
+}
