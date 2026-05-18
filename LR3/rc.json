@@ -1,0 +1,28 @@
+{
+  "time_step": 1e-04,
+  "nodes": 3,
+  "branches": [
+    {
+      "type": "v",
+      "branch": 0,
+      "from": 1,
+      "to": 0,
+      "E": 10.0
+    },
+    {
+      "type": "r",
+      "branch": 1,
+      "from": 1,
+      "to": 2,
+      "R": 1000.0
+    },
+    {
+      "type": "c",
+      "branch": 2,
+      "from": 2,
+      "to": 0,
+      "C": 0.001,
+      "u0": 0.0
+    }
+  ]
+}
