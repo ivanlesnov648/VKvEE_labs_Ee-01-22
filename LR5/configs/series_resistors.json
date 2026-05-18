@@ -1,0 +1,11 @@
+{
+  "circuit_type": "series_resistors",
+  "dt": 5e-5,
+  "duration": 0.01,
+  "voltage": 10.0,
+  "source_node": 1,
+  "components": [
+    {"type": "R", "value": 10, "node1": 1, "node2": 2},
+    {"type": "R", "value": 20, "node1": 2, "node2": 0}
+  ]
+}
